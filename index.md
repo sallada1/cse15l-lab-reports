@@ -10,3 +10,4 @@ __Maserati__
 ***
 **These are the _new changes_**
 [Lab Report 1](https://sallada1.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+[Lab Report 1](lab-report-1-week-2.html)
