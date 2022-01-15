@@ -32,8 +32,8 @@ After this step,I logged into the ieng6 computer using the "ssh" command and use
 In order to prevent entering the password everytime we login or want to copy the files to the ieng6 computer,I used the "ssh keygen" that creates a pair of public key and private key.
 ![Image](RandomART.png)
 The keys will cause the "ssh" to use the pair of files instead of the password.
-[SSH](ssh-logout.png)
-[SSH](SSHkey-nopassword.png)
+![SSH](ssh-logout.png)
+![SSH](SSHkey-nopassword.png)
 ## Optimizing Remote Running
 I made a local edit to the file(WhereAmI.java).The change I made to the file was replacing user.home by user.name.
 ![login](LocalEdit.png)
