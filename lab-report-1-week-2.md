@@ -39,4 +39,5 @@ I made a local edit to the file(WhereAmI.java).The change I made to the file was
 ![login](LocalEdit.png)
 In order to optimize the remote running,I used the command "ls" following the ssh commands.After that step,I also listed all the cp,javac and java statements in a single line using semi colons.These two procedures really helped speeden the process.
 ![login](task7.png)
-
+![login](code.png)
+![login](code2.png)
