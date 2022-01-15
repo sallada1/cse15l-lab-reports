@@ -14,6 +14,7 @@ Since it's the first time connecting to the new server,it will produce a message
 ![Message](Message.png)
 I said "yes" to this message.After entering it,I was logged in and my terminal was connected to the server.
 ![RemoteConnection](RemoteConnection.png)
+
 ## Trying Some Commands
 In this task,I ran different commands such as ls,ls <directory>,pwd,cp and ls -lat.
 In the image below ls and ls -lat was used.The 'ls' command lists all the files in the current directory.The ls -lat gives a more detailed account of the files in different directories including those who have access,source,and the time it has been modified.
