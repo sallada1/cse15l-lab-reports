@@ -16,10 +16,10 @@ I said "yes" to this message.After entering it,I was logged in and my terminal w
 ![RemoteConnection](RemoteConnection.png)
 
 ## Trying Some Commands
-In this task,I ran different commands such as ls,ls <directory>,pwd,cp and ls -lat.
+In this task,I ran different commands such as ls,ls directory,pwd,cp and ls -lat.
 In the image below ls and ls -lat was used.The 'ls' command lists all the files in the current directory.The ls -lat gives a more detailed account of the files in different directories including those who have access,source,and the time it has been modified.
 ![Images](abc.png)
-ls <directory> prints the contents in that directory.The "pwd" prints the working directory and "cp" copies the information in the files to the server(in this case,the ieng6 computer)
+ls directory prints the contents in that directory.The "pwd" prints the working directory and "cp" copies the information in the files to the server(in this case,the ieng6 computer)
 ![Images](def.png)
 ![Images](ghi.png)
 
@@ -28,7 +28,7 @@ For copying files from my computer to a remote computer,I entered the command "s
 ![scp](MovingFiles-scp.png)
 After this step,I logged into the ieng6 computer using the "ssh" command and used ls and noticed that the file is in the home directory of the server.Then,I ran the code using the "javac" and "java" commands.
 ![scp](MovingFiles(nopassword)-scp.png)
-![Images](ghi.png)
+
 ## Setting an SSH Key
 In order to prevent entering the password everytime we login or want to copy the files to the ieng6 computer,I used the "ssh keygen" that creates a pair of public key and private key.
 ![Image](RandomART.png)
