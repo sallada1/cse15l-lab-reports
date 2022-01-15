@@ -28,7 +28,7 @@ For copying files from my computer to a remote computer,I entered the command "s
 ![scp](MovingFiles-scp.png)
 After this step,I logged into the ieng6 computer using the "ssh" command and used ls and noticed that the file is in the home directory of the server.Then,I ran the code using the "javac" and "java" commands.
 ![scp](MovingFiles(nopassword)-scp.png)
-
+![Images](ghi.png)
 ## Setting an SSH Key
 In order to prevent entering the password everytime we login or want to copy the files to the ieng6 computer,I used the "ssh keygen" that creates a pair of public key and private key.
 ![Image](RandomART.png)
