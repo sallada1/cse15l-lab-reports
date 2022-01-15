@@ -18,10 +18,10 @@ I said "yes" to this message.After entering it,I was logged in and my terminal w
 ## Trying Some Commands
 In this task,I ran different commands such as ls,ls directory,pwd,cp and ls -lat.
 In the image below ls and ls -lat was used.The 'ls' command lists all the files in the current directory.The ls -lat gives a more detailed account of the files in different directories including those who have access,source,and the time it has been modified.
-![Images](abc.png)
+![Image](abc.png)
 ls directory prints the contents in that directory.The "pwd" prints the working directory and "cp" copies the information in the files to the server(in this case,the ieng6 computer)
-![Images](def.png)
-![Images](ghi.png)
+![Image](def.png)
+![Image](ghi.png)
 
 ## Moving Files with scp
 For copying files from my computer to a remote computer,I entered the command "scp" followed by the file(WhereAmI.java) that I wanted to copy to the remote computer(server) and the course specific info in the terminal of the directory.
