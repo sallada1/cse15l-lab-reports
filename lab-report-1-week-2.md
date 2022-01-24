@@ -8,7 +8,7 @@ Since I use a MacBook,I downloaded the Mac Universal with a Mac Operating System
 ## Remotely Connecting
 I accessed the Account Lookup Page via the [AccountLookup](https://sdacs.ucsd.edu/~icc/index.php).
 After entering the username and Student ID,it will lead to a page that gives us the "**Account Lookup Results**".Under "Resources",I looked at the course specific code for CSE 15l.
-After opening a new terminal in VS Code,I entered the command ssh followed by the course specific account:
+After opening a new terminal in VS Code,I entered the command 'ssh' followed by the course specific account:
 ![SSH](ssh.png)
 Since it's the first time connecting to the new server,it will produce a message similar to:
 ![Message](Message.png)
@@ -16,7 +16,7 @@ I said "yes" to this message.After entering it,I was logged in and my terminal w
 ![RemoteConnection](RemoteConnection.png)
 
 ## Trying Some Commands
-In this task,I ran different commands such as <ls>,<ls directory>,<pwd>,<cp> and <ls -lat>.
+In this task,I ran different commands such as '<ls>','<ls directory>','<pwd>',<cp> and <ls -lat>.
 In the image below <ls> and <ls -lat> was used.The <ls> command lists all the files in the current directory.The <ls -lat> gives a more detailed account of the files in different directories including those who have access,source,and the time it has been modified.
 ![Image](abc.png)
 <ls> directory prints the contents in that directory.The <pwd> prints the working directory and <cp> copies the information in the files to the server(in this case,the ieng6 computer)
