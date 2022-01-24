@@ -39,7 +39,7 @@ The keys will cause the `<ssh>` to use the pair of files instead of the password
 I made a local edit to the file(WhereAmI.java).The change I made to the file was replacing user.home by user.name.
 ![login](LocalEdit.png)
 In order to optimize the remote running,I used the command `<ls>` following the ssh commands.After that step,I also listed all the `<cp>`,`<javac>` and `<java>` statements in a single line using semi colons.These two procedures really helped speeden the process.
-I had used 3 key strokes for the three statements,reducing the amount of time spent.
+I had used 60 key strokes for the three statements,reducing the amount of time spent.
 ![login](task7.png)
 ![login](code2.png)
 ![login](FinalOutput.png)
