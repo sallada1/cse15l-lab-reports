@@ -8,7 +8,7 @@ Since I use a MacBook,I downloaded the Mac Universal with a Mac Operating System
 ## Remotely Connecting
 I accessed the Account Lookup Page via the [AccountLookup](https://sdacs.ucsd.edu/~icc/index.php).
 After entering the username and Student ID,it will lead to a page that gives us the "**Account Lookup Results**".Under "Resources",I looked at the course specific code for CSE 15l.
-After opening a new terminal in VS Code,I entered the command <ssh> followed by the course specific account:
+After opening a new terminal in VS Code,I entered the command ssh followed by the course specific account:
 ![SSH](ssh.png)
 Since it's the first time connecting to the new server,it will produce a message similar to:
 ![Message](Message.png)
