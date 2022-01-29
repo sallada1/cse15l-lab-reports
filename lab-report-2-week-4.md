@@ -24,4 +24,4 @@ SYMPTOM OF THE FAILURE
 **Link of the test file**
 [Test-File-Link](test-file2.md)
 ## RELATIONSHIP BETWEEN THE BUG,SYMPTOM AND FAILURE-INDUCING INPUT
-The bug is that the program doesn't take into account the possibility of the presence of `(`between `[` and `]`in a test file.This leads to a symptom of the index out of bounds error.Since we try to find `(` from `]` leads to the value of openParen to take the default value -1.
+The bug is that the program doesn't take into account the possibility of the presence of `(`between `[` and `]`in a test file.This leads to a symptom of the index out of bounds error.Since we try to find `(` from `]`,it leads to the value of openParen to be -1(default value).
