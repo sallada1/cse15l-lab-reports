@@ -14,7 +14,7 @@ The only difference between image link and the other file links is the character
 ## Test file that doesn't contain `[`,`]`,`(`,`)`
 ![Image](nobracket.png)
 SYMPTOM OF THE FAILURE 
-![Image](Terminaloutput1-oob.png)
+![Image](abcd.png)
 **Link of the test file**
 ---
 [Test-File-Link](test-file1.md)
