@@ -15,6 +15,7 @@ The only difference between image link and the other file links is the character
 ![Image](nobracket.png)
 SYMPTOM OF THE FAILURE 
 ![Image](abcd.png)
+---
 **Link of the test file**
 ---
 [Test-File-Link](test-file1.md)
