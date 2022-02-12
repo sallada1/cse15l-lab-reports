@@ -15,10 +15,9 @@ I used `cat id_rsa.pub` to copy the ssh key to the clipboard.In github,I went to
 The public key on the github page looks like the image below:
 ![Image](cat.png)
 ![Image](ieng6key.png)
-I deleted one of the test files from the markdown-parse repository from the Virtual Studio Code.I wanted to commit the deletion of the file 'test-file.md' to main. I used the `git push origin main` to commit the change
+I deleted one of the test files from the markdown-parse repository from the Virtual Studio Code.I wanted to commit the deletion of the file 'test-file.md' to main. I used the `git push origin main` to commit the change.The change has been committed to the [link](https://github.com/sallada1/markdown-parse.git)
+
 ![Image](filedeletion.png)
 
 ![Image](ieng6output.png)
-
-
 
