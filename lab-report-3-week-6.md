@@ -19,5 +19,5 @@ I deleted one of the test files from the markdown-parse repository from the Virt
 
 ![Image](filedeletion.png)
 
-![Image](ieng6output.png)
+![Image](filedeletionoutput.png)
 
