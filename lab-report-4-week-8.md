@@ -17,9 +17,11 @@ Link to the reviewed markdown-parse repository : [Reviewedlink](https://github.c
 ## The code of the test cases in MarkdownParseTest.java 
 
 ### My MarkdownParseTest.java file test cases
+The three test cases failed
 ![Image](testcase.png)
 
 ### Reviewed MarkdownParseTest.java file test cases
+The three test cases failed
 ![Image](reviewedtest.png)
 
 ## Corresponding output 
@@ -31,13 +33,21 @@ Link to the reviewed markdown-parse repository : [Reviewedlink](https://github.c
 *REVIEWED OUTPUT*
 ![Image](reviewedcodeoutput.png)
 
+## SNIPPET-1 
+Yes,there's a small change in the MarkdownParse.java file that could run the snippet-1.
+![Image](backticks.png)
+By replacing the `toReturn.add(markdown.substring(openParen + 1,closeParen)` to 
+  ``toReturn.add(markdown.substring(nextOpenBracket + 1,nextCloseBracket).replace("`",""))`` and  `](` to `]` in the nextCloseBracket,the snippet-1 test case passes.
+  The ``.replace("`","")`` removes the backticks present in the test case and places an empty string instead.
 
-For each test above:
-Decide on what it should produce by using either VScode preview or the CommonMark demo site
-Showing the code in MarkdownParseTest.java for how you turned it into a test
-For your implementation, the corresponding output when running the tests; if it passed, say so. If it didn’t pass, show the specific part of the JUnit output that shows the test failure.
-For the implementation you reviewed, the corresponding output when running the tests; if it passed, say so. If it didn’t pass, show the specific part of the JUnit output that shows the test failure.
-Answer the following questions with 2-3 sentences each:
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
-Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+## SNIPPET-2
+
+By adding `.replace("\\",""))` to `toReturn.add(markdown.substring(nextOpenBracket + 1,nextCloseBracket)`,the snippet-2 test removes the backslashes that were previously present in the output.
+![Image](backslash.png)
+However,there's an additional string `a [`.We could check if `markdown.substring(nextOpenBracket + 1,nextCloseBracket)` contains `[` and replace the string in between the two `[` with an empty string for this test to pass.This minimal change could help pass this specific test case.
+However,for all related cases that is nest parentheses, brackets, and escaped brackets,there are a lot of possibilities that must be taken into account.There are several conditional statements or methods that must be added for all the related cases to pass.Therefore,it might take more than 10 lines.
+
+## SNIPPET-3
+![Image](TEST3.png)
+No,there might be a code change greater than 10 lines to makes this program work.
+For snippet-3,there's a lot of change required to the code the elements in the arraylist don't match the expected elements.Apart from those change ,we would also have to add a conditional statement such that if there are newlines present between the brackets and parentheses, then we could implement the `replaceAll("((?m)^[ \t]*\r?\n",""))` to eliminate the the empty lines.
