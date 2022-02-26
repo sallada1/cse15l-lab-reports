@@ -41,7 +41,7 @@ By replacing the `toReturn.add(markdown.substring(openParen + 1,closeParen)` to
   The ``.replace("`","")`` removes the backticks present in the test case and places an empty string instead.
 
 ## SNIPPET-2
-
+Yes,there's a small change in the MarkdownParse.java file that could run the snippet-2.
 By adding `.replace("\\",""))` to `toReturn.add(markdown.substring(nextOpenBracket + 1,nextCloseBracket)`,the snippet-2 test removes the backslashes that were previously present in the output.
 ![Image](backslash.png)
 However,there's an additional string `a [`.We could check if `markdown.substring(nextOpenBracket + 1,nextCloseBracket)` contains `[` and replace the string in between the two `[` with an empty string for this test to pass.This minimal change could help pass this specific test case.
