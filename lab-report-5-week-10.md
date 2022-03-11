@@ -10,10 +10,10 @@ With the help of the `diff` followed by the *results.txt* output in the provided
 
 ![Image](diff.png)
 
+![Image](bash577.png)
+
 In order to figure out the file which was providing the 
 output("[train.jpg]"),I used the `bash script.sh` function in the **markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the "[train.jpg]".
-
-![Image](bash577.png)
 
 For this implementation,my implementation is correct because it considers the case where the link could instead be an image.Since the only difference between the image and link is the presence of an exclamation point("!") before an opening bracket("[").
 
@@ -32,6 +32,8 @@ The bug in the code is that it adds the words in between the opening and closing
 With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to point out the differences between the two files.
 
 ![Image](diff.png)
+
+![Image](wrong.png)
 
 In order to figure out the file which was providing the 
 output("[/bar\* "ti\*tle]"),I used the `bash script.sh` function in the **my-markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing  "[/bar\* "ti\*tle]".
