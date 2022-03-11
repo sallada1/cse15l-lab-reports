@@ -6,12 +6,12 @@ The two tests from the 652 commonmark-spec tests where my implementation had dif
 
 ### The provided MarkdownParse.java class considers images as links
 
-With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to out the differences between two files.
+With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to point out the differences between the two files.
 
 ![Image](diff.png)
 
 In order to figure out the file which was providing the 
-output("[train.jpg]"),I used the `bash script.sh` function in the **markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the output.
+output("[train.jpg]"),I used the `bash script.sh` function in the **markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the "[train.jpg]".
 
 ![Image](bash577.png)
 
@@ -29,19 +29,19 @@ The bug in the code is that it adds the words in between the opening and closing
 
 ### The provided MarkdownParse.java class considers words with spaces as links
 
-With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to out the differences between two files.
+With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to point out the differences between the two files.
 
 ![Image](diff.png)
 
 In order to figure out the file which was providing the 
-output("[/bar\* "ti\*tle]"),I used the `bash script.sh` function in the **my-markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the output.
+output("[/bar\* "ti\*tle]"),I used the `bash script.sh` function in the **my-markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing  "[/bar\* "ti\*tle]".
 
 ![Image](bash22.png)
 
 For this implementation,my implementation is incorrect because it doesn't consider the case where there are white spaces between the opening and closing parenthesis.
-Expected output was [] and my output was [/bar\* "ti\*tle].
+Expected output was [] and my output was "[/bar\* "ti\*tle]".
 
 ![Image](mycodeerror.png)
 
-The bug in the code is that it adds the words in between the opening and closing parenthesis.In the real world,links can't have a space(" ") between them.Even though it follows all the syntax rules,it can't be considered a link due to this very reason.To prevent this from taking place,`trim()` function helps in removing th unnecessary spaces between the parentheses.
+The bug in the code is that it adds the words in between the opening and closing parenthesis.In the real world,there can't be a space(" ") between the same link.Even though it follows all the syntax rules,it can't be considered a link due to this very reason.To prevent this from taking place,`trim()` function helps in removing th unnecessary spaces between the parentheses.
 
