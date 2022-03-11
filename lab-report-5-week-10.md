@@ -6,11 +6,11 @@ The two tests from the 652 commonmark-spec tests where my implementation had dif
 
 ### The provided MarkdownParse.java class considers images as links
 
-With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse)
+With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to out the differences between two files.
 
 ![Image](diff.png)
 
-The `diff` function helps in pointing out the differences between two files.In order to figure out the file which was providing the 
+In order to figure out the file which was providing the 
 output("[train.jpg]"),I used the `bash script.sh` function in the **markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the output.
 
 ![Image](bash577.png)
@@ -29,11 +29,11 @@ The bug in the code is that it adds the words in between the opening and closing
 
 ### The provided MarkdownParse.java class considers words with spaces as links
 
-With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse)
+With the help of the `diff` followed by the *results.txt* output in the provided [markdown-parse](https://github.com/ucsd-cse15l-w22/markdown-parse) and [my-markdown-parse](https://github.com/sallada1/markdown-parse),I was able to out the differences between two files.
 
 ![Image](diff.png)
 
-The `diff` function helps in pointing out the differences between two files.In order to figure out the file which was providing the 
+In order to figure out the file which was providing the 
 output("[/bar\* "ti\*tle]"),I used the `bash script.sh` function in the **my-markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the output.
 
 ![Image](bash22.png)
