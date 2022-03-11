@@ -21,6 +21,8 @@ With the help of the `cat` function,I confirmed the output.
 
 For this implementation,my implementation is correct because it considers the case where the link could instead be an image.Since the only difference between the image and link is the presence of an exclamation point("!") before an opening bracket("[").
 
+Expected output was [train.jpg] and my output was "[]".
+
 ![Image](bash577.png)
 
 I implemented the following if statement to prevent the misassumption of an link:
@@ -49,6 +51,7 @@ With the help of the `cat` function,I confirmed the output.
 ![Image](cat2.png)
 
 For this implementation,my implementation is incorrect because it doesn't consider the case where there are white spaces between the opening and closing parenthesis.
+
 Expected output was [] and my output was "[/bar\\* "ti\\*tle]".
 
 The bug in the code is that it adds the words in between the opening and closing parenthesis.In the real world,there can't be a space(" ") between the same link.Even though it follows all the syntax rules,it can't be considered a link due to this very reason.To prevent this from taking place,`trim()` function helps in removing th unnecessary spaces between the parentheses.
