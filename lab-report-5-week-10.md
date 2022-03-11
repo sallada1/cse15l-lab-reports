@@ -10,14 +10,18 @@ With the help of the `diff` followed by the *results.txt* output in the provided
 
 ![Image](diff.png)
 
-![Image](bash577.png)
+![Image](trainpic.png)
 
 In order to figure out the file which was providing the 
 output("[train.jpg]"),I used the `bash script.sh` function in the **markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing the "[train.jpg]".
 
+With the help of the `cat` function,I confirmed the output.
+
+![Image](cat1.png)
+
 For this implementation,my implementation is correct because it considers the case where the link could instead be an image.Since the only difference between the image and link is the presence of an exclamation point("!") before an opening bracket("[").
 
-![Image](trainpic.png)
+![Image](bash577.png)
 
 I implemented the following if statement to prevent the misassumption of an link:
 
@@ -38,12 +42,16 @@ With the help of the `diff` followed by the *results.txt* output in the provided
 In order to figure out the file which was providing the 
 output("[/bar\* "ti\*tle]"),I used the `bash script.sh` function in the **my-markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing  "[/bar\* "ti\*tle]".
 
+![Image](mycodeerror.png)
+
 ![Image](bash22.png)
+
+With the help of the `cat` function,I confirmed the output.
+
+![Image](cat2.png)
 
 For this implementation,my implementation is incorrect because it doesn't consider the case where there are white spaces between the opening and closing parenthesis.
 Expected output was [] and my output was "[/bar\* "ti\*tle]".
-
-![Image](mycodeerror.png)
 
 The bug in the code is that it adds the words in between the opening and closing parenthesis.In the real world,there can't be a space(" ") between the same link.Even though it follows all the syntax rules,it can't be considered a link due to this very reason.To prevent this from taking place,`trim()` function helps in removing th unnecessary spaces between the parentheses.
 
