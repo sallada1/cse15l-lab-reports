@@ -42,8 +42,6 @@ With the help of the `diff` followed by the *results.txt* output in the provided
 In order to figure out the file which was providing the 
 output("[/bar\* "ti\*tle]"),I used the `bash script.sh` function in the **my-markdown-parse** directory where the output is followed by the file name.After going through the output,it was easy to figure out which file was producing  "[/bar\* "ti\*tle]".
 
-![Image](mycodeerror.png)
-
 ![Image](bash22.png)
 
 With the help of the `cat` function,I confirmed the output.
