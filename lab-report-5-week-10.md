@@ -55,7 +55,7 @@ For this implementation,my implementation is incorrect because it doesn't consid
 Expected output was [] and my output was "[/bar\\* "ti\\*tle]".
 
 The bug in the code is that it adds the words in between the opening and closing parenthesis.In the real world,there can't be a space(" ") between the same link.Even though it follows all the syntax rules,it can't be considered a link due to this very reason.To prevent this from taking place,`trim()` function helps in removing th unnecessary spaces between the parentheses.
-# CODE TO BE CHANGED
+# MY CODE THAT NEEDS TO BE CHANGED
 ![Image](Mycode.png)
 # REFERENCE CODE THAT USED `.trim()`
 ![Image](Refcode.png)
